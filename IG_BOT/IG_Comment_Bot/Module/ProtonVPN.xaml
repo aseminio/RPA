@@ -1,0 +1,179 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProtonVPN" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1002,1268" sap2010:WorkflowViewState.IdRef="ProtonVPN_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="52">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ProtonVPN" sap:VirtualizedContainerService.HintSize="1012,1203" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Proton VPN" sap:VirtualizedContainerService.HintSize="950,1092" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0cfbce4d-43f3-4b43-9068-bba1bf627ab3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,801" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'Disconnect'" sap:VirtualizedContainerService.HintSize="854,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0cfbce4d-43f3-4b43-9068-bba1bf627ab3" Timeout="2" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DelayAfter="3" DisplayName="Click 'Disconnect'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cfbce4d-43f3-4b43-9068-bba1bf627ab3" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="128, 172, 81, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Disconnect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Disconnect' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Disconnect' role='text' automationid='' check:text='Disconnect' /&gt;" Guid="9b60e28c-adeb-4c88-9990-219a9f1b5af0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAZCAYAAABAb2JNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUmSURBVGhDzZhrcts2EIB1DZGUZTex4jTtQaT2h/M4SaQfmSQXqTxj+yJq7ZMoPQm6u8ACu4slTDmZTDHzDYkH8fi8ACnPzs9WYQngNfIqnC8jF3g9vwJeh4sLAK7L5VU4gzZDfxn67mXoiEui71dE17/K9P1V6AeP14XFrw5vImdvwpD5bQK/N+B6/Uwv7xdIGpuQcxJzJmAduMYhrRWuuP4ZCl2CpJpVOFuswgIYBhSWBM5fVCI7ENzRVUMDJrkdDoyDEi3BiFxIYYBFEko0oiWdCkpFmdy/LzQh50qYtUAQzVAYRt0A0lBc370gSN78F2LeAXTPQpkoVgNCmUp0EpyoJlRNGPAWBmTBAhThSXuKKFX3M10qotcxQ1lzkIVEkRoqR8kZKZXFjglGPLmIkEuCp0Qw4yxWyUiCqogeQT6T7v0x0lwq9LxnLG4ciNAUqZhHsXRNxDJPtIN7TAixTcGIWEjjmCiAHCPPwn+EaVKBARHzyJR5pkgdJx4BRSIhIzfnrVjGiGVGzuGno5cRC3oyivG4qKnbNGRy/3LcjJ7bk1I9mpKbghEjN1PLRbEsuf2iQ8xClWjGkzWF9LwdI6PnQtu/hSd1Pv8UDgHTP+Ej5LNM+/xzBCuxRXC5RtpRjJiFkxQQJHEFArkuPdcUiuixldRtNFWl41/XbalE6YfP4yrvimU8wYgVzFjBcG8Wp/FkGKxEmx8ljsHjO1K/hf26lHXr23AkgQ9hK9oyUt44II1hifLeEyo/zRhPaAYWhT80KjwJTIpKhdfO4Y/76OXwNZd16fq0VITFHj7pcoCjsIWSKslSmYZcFaVIEauJMvGqJItF15woFGlKzS8XI1WU13XXYU89PoSPUDdHckRzEnUozKnfskz40THf2HqY7w6k0hGAvMtjbncPVB8T5GnrIx9Sm0do80i1MT2GXdqeTP9nkpITtIFt3i2gPjHWZnPzb8qXdLz5EJ+h7Q+L9sVp1vtv9PBhi/kidYv1MpJz+9tYh2yThKo+SuW+j/u3JBgpZe+MVEiHz5CHaN3cxXGPd2E9QD5LhXT4Ank4FjiijvdhQ2cvLDwJP+yihH74mt4RUb5sE/6GSEzn6ubmnqRSnoXneu4LpPLPUmQnpMpyZNOSmqQd99dZWiG91I63YQN522+v6vFnMvM2j7EDqb2I1Ji3ZStY0PuSB8nxBVaid0f5L3E8kC6/IDj6ougkmf4QRZZCbf9SPgAnRmq9/WM08tdATEquE8UKVS+lvhR/ZMj3VrInWkhFyZ5oljGSSOqIMEWjzUSpVqLNJ9S5OX40KKr6KBSvZT5YJqWiZE+0iVzCSk1HBhwhfY5mQxbG0ezQaDNNarW9R6Qyqn3Z3muv7Wi9EEaijVQsa0r1ohklf07j3YVNFo9ypeB0RORz2OG7pDovGe9MjWdtRL/USl72IV9k5aVUjg3bRy3ZET3piLjM7weK1iwWZKNokruCM1a0yWV36awGOOId8Y5Um7xorKXaJCUTto2NzKoPu2PKmK5UN3J9qUqsSMf9e6hDwQn16QZJSFfiIR1v4NlUrqSOg7/vBfmn6UTs8xXemG2iVI160fERQfcsM5ULuW2S3BOZKNXiiWnh9fH9ZGkACrVfD4UoCb9/T5OK+OJagNQyIR9/QT8eb+xxfHkIiBjDlYb4cp7LBKmIJ+Fn4M3F51lybd4R9Bx+jFT6p8mJeP1UeHMZpxaLCHlTyIIlvrwx/kfb38Obz3S0WJnnsgm4kiVW6ir8BwJeL52fSAxZAAAAAElFTkSuQmCC" InformativeScreenshot="152faaafa74b5570e318d6577454214e.png" ScopeSelectorArgument="&lt;wnd app='protonvpn.exe' cls='HwndWrapper*' title='Proton VPN' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="33, 163, 270, 40" ElementType="Button" FriendlyName="'Disconnect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' role='push button' check:text='Disconnect' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="128, 172, 81, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Disconnect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Disconnect' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Disconnect' role='text' automationid='' check:text='Disconnect' /&gt;" Guid="cfcca5fa-b0e0-42a0-a2a0-a3b5bd754264" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAZCAYAAABAb2JNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGTSURBVGhD7ZXBrcIwDIbfgG8TTqzBkRkYoBN0Aa7MwIEBnkAg/Jo2bhw7TUKJJSRs6T8UG/vP1yb5+fvdgKmtDKqCDKqCDKqCDKqCDKqCDKqCVkI9wANcnOCWzH+3Iqi340hKxLPbRX8yqHkloF7gviVF2x6eBlAKuRwPIleG6pRp8LV6G6rI7eB+ds/k652/aAz2Zb+cB3jsSZ7O3J/G/BS0T02NV8lPpubaXfxzCHpEVkPFRtNCGVQcTt7ateuDSVzgQh57U2PyN5w5BPbBuecertU1g7yf8NISd0TBc2rNqDZQvQF5oTl5w3RRVXk2QzyvrfHzGIx4fSXPg9pBXdr++KaniOBmhpfyxSNnDVSctxAj1JJnp/eh1pgfFBlmi/g0qCuBzcrU1EEV23sBKiqq/9Dtn9va6ts/cWALo0NNOPT5+RSeaY/aiyr0bQU17WcESSCWPM9QE+ATUHlQgygJlQeFPIrXcDOiB98x7aA6zdBIiIu24Jn2oP+NoJrayKAqyKAqyKAqyKAqyKA21wb+AfNjpzyNvkXlAAAAAElFTkSuQmCC" InformativeScreenshot="f609f80b8f7a5d526d0f7e1bb5bde006.png" ScopeSelectorArgument="&lt;wnd app='protonvpn.exe' cls='HwndWrapper*' title='Proton VPN' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="33, 163, 270, 40" ElementType="Button" FriendlyName="'Disconnect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' role='push button' check:text='Disconnect' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <uix:NClick ClickType="Single" DelayAfter="6" DisplayName="Click 'Quick Connect'" sap:VirtualizedContainerService.HintSize="854,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0cfbce4d-43f3-4b43-9068-bba1bf627ab3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="33, 163, 270, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Quick Connect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' role='push button' check:text='Quick Connect' /&gt;" Guid="971aa06b-560d-40b4-aba3-96892484c5ae" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARIAAAAsCAYAAACpMDdKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARPSURBVHhe7d29axRBGMdxO7FI0BPfMImJSYiCGjgkok0k8S1WYuVLoSCIoGJvo4WdKOI/YJdWK0trwTqNYCcW6ewEi3Gf8Z5lbva53bnb7MWY78AH173ndveOe347cwRux9jhGQcAdRAkAGrLg2Tnzl1udKTlt+Xf1u4Jd37+hTs2dsPNTz1yj686tzD7zGObbba3x7b0/rWzH9zkgSW3d/dUng+aFSoPEn1g+sgZt9x+7e5d+O4PBgBCMmG5/SrLiIWuzBCFpY2kj3UQABA3Fz+7ibE5O0hkp8xErCcCQEhmJpodXUEi34k8uPzTfBIAhB6u/Hb79swWg+Ri+635BACwHD10pRgkx8dvm8UAYLl+7mMxSOanHpvFAGCRzCgEiVUIAL3I35kUgkT/CAUAUhEkAGoxZyRWIQD0wtIGwIYgSADUwtJmC1pzf8eq8Zjl04+sOPPSeAzYCCxthuXN3+YPx/p7oy7BMINEzxWOT0/sWmxvBEnDfCNnYy0Lk3x/1ozrsnMIM4VBguRlFnJ+fCnu39JBou979LpQD0ubhmlDdoWI6sxSBp2ZpOo3SPSam76uTUGQNIKlTcP80qCkiXW2ossUqz6uif/vaYMEo6s+OGY+28iGtTyquuYuxnnj0MyvN1rehedOqfFKXmdVTfi6dfyXYblJCJKmdD7QZR/W1ezOKEOXCwMFiTZfcJeVpumq12NqbXSOnDZhwh3bmrlY+/R682PqOYJrSKnRaw+DSr/DSX0v+nl9SMfSpkmdD3VZkGjj1QmSqhlEHiTaRNnIGyuWcM2q13mrrnfQGn++KAD0/dNwqXovCJJmsLRpUkJT1p6RJDSGr89UhohIDZKS88avKSUkKmv0fD2GD5KE94IgaQ5B0qCk2UI2tIEaC5JsrHf+Nb/4DVTe1UXJeRsNkrohkVKDvrG0aZg2ldm8xt3famK/Lxu9mi4prDqP67G0yS2l1xzodd6+QyKxpup1isoagqQRLG2GQBuiq3k7IRJ/6OO7uX4HIKNX0+U1QXOEXzD6ej2PNlI2ysJEzxEvceS48bWFNbovDKH4eq19KTXW6xRrWZ2+h1aN7MuPq68/eA42BkEyBPkHPB7GnVFnDTKkSVOaLg8mHUGj+PqwcYLasllHr2s2AzEYcUClhERKjbCuqfB9Tsl7ER+j8FwMhKXNJtLZB3dHbHUsbTaZ3nVllC01gH8dQQKgFpY2AGpjaQNgQxAkAGoxZyR3lr6axQBgMX8gi5/sBNAP8yc75QeBrWIAsBw9tFIMkuPTl9zDlV/mEwAgdmDviWKQjI603HL7lfkEAAgtt1/nIVIIkomxOXdz8bP5RAAQd5e+ucnxUz4zCkGipo8s+JnJvQvfzYMA2J4kEyQbJCMkK8wgGR1tebq9vzXnVhbeuZOT993pmaf+QGdmn3tss8329tiW3r+1+MXNHL7mDna+EwmzQhVmJADQL4IEQE0z7g/86xg1vbYKAQAAAABJRU5ErkJggg==" InformativeScreenshot="25f46a8e628c5f1d632b989a4bf003cb.png" ScopeSelectorArgument="&lt;wnd app='protonvpn.exe' cls='HwndWrapper*' title='Proton VPN' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="115, 172, 106, 21" ElementType="Text" FriendlyName="'Quick Connect'" FullSelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Quick Connect' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='SidebarQuickConnectButton' /&gt;&lt;ctrl name='Quick Connect' role='text' automationid='' check:text='Quick Connect' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAZCAYAAADQfBuCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVGhD7ZbNbcMwDIU7X3cpOkgunSLXbpAFes4KPWQJl1T8FIqmKcap0woggQ9BZEb8eZScl7fXaUrGI4UblBRuUFK4QUnhBiWFG5QUblB2F+48Xe1oPLM4fZMzcTCeJTds4T6uzZZ2+TT8AjxTOMSSdnq3fUdnIVxpHNmZxKvrVPyFF59wErYId6ChKva1XB9aOPRd1cU0wqEBjWhgPoVbT16Ue4VDznvn9SdEhStXjdM0nEZce5a/9tHfC0hIWOMv9qynicy6bns5Nxhx9ZDWfNXrQsaO+BScOns+sm6YHM6bcPMG3uQeSXk2XD+bhEOxYoo4ycYfe8JXxaigaGMiNdbJtNaQb90TMUQOER/kLgcD7+BoL7z6bsLNm3jCodBHhOudkCockiarhWgCOYO1uL18t/qUeKrh6B/E7PXi14R7+MQ5iYDiT3RFY6LCOXF1TRFRuj6It2JFuEAvYsIRodNAhoR3E47sMn+af5QE3allnLi7CrdRlIrj0wiHIsxmGdNtNa2ska0VGRqO+Tn2QlMt3JwFa3HvFiXo06uT6fpEhWOQQNOsWTQdRE8r7nC2tSKrj0hGvpCLP+IgcTJPPMTQVybvq3OTPliTout8rbWIj1UncyY/9NDy4bW6L+oXvwEL4Zi6oTZDeZwKNm5KpMg6CDCRWPGXiQpf71St5WwOoDA9EBFRIj6MldPifez0Qu8hf2sKZ4HTZamfPJ+wcAymis27upL9uUu45P+Qwg1KCjcoKdyQTNMPk8DvFw/o4lgAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" FilePath="C:\Program Files (x86)\Proton Technologies\ProtonVPN\protonvpn.exe" IconBase64="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" InformativeScreenshot="590eef4b0ea1ace175f677a62c666127.png" Selector="&lt;wnd app='protonvpn.exe' cls='HwndWrapper*' title='Proton VPN' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
