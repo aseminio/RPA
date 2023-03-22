@@ -104,16 +104,8 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="LaunchIG" sap:VirtualizedContainerService.HintSize="558,1376" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Int32" Name="int_counter">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="1" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="int_limit">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="30" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="int_counter" />
+      <Variable x:TypeArguments="x:Int32" Default="30" Name="int_limit" />
       <Variable x:TypeArguments="x:TimeSpan" Default="00:00:05" Name="timespan_delay" />
       <Variable x:TypeArguments="x:String" Name="str_finalcomment" />
       <Variable x:TypeArguments="x:String" Default="@its.sobalicious" Name="STR_HANDLE" />
@@ -123,11 +115,7 @@
       <Variable x:TypeArguments="x:String" Name="str_comment" />
       <Variable x:TypeArguments="x:String" Name="str_comment2" />
       <Variable x:TypeArguments="x:String" Default="https://www.instagram.com/explore/tags/dogsofmanila/" Name="str_browserurl" />
-      <Variable x:TypeArguments="x:Int32" Name="int_commentcounter">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="int_commentcounter" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -171,6 +159,9 @@
         </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_password">
           <Literal x:TypeArguments="x:String">_Instantnoodles14</Literal>
+        </InArgument>
+        <InArgument x:TypeArguments="x:Boolean" x:Key="in_protonvpn">
+          <Literal x:TypeArguments="x:Boolean" />
         </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
